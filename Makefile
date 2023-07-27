@@ -22,8 +22,8 @@ latest:
 
 push:
 	@echo "Pushing tags '$(VAPOR_TAG)' and 'latest'"
-	docker push devdrops/php-toolbox:$(VAPOR_TAG)
-	docker push devdrops/php-toolbox:latest
+	docker push devdrops/vapor-cli:$(VAPOR_TAG)
+	docker push devdrops/vapor-cli:latest
 
 
 .PHONY: develop latest push
