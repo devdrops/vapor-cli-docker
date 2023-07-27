@@ -9,7 +9,7 @@ LABEL maintainer="Davi Marcondes Moreira <davi.marcondes.moreira@gmail.com>" \
       org.label-schema.name="DevDrops/Vapor-CLI" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/devdrops/vapor-cli" \
+      org.label-schema.vcs-url="https://github.com/devdrops/vapor-cli-docker" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.version=$BUILD_VERSION
 
