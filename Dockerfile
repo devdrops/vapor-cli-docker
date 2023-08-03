@@ -16,7 +16,10 @@ LABEL maintainer="Davi Marcondes Moreira <davi.marcondes.moreira@gmail.com>" \
 # Alpine requirements
 RUN apk update && \
     apk upgrade && \
+    apk add --no-cache zlib-dev libpng-dev && \
     rm -rf /var/cache/apk/*
+
+RUN docker-php-ext-install gd
 
 # Vapor's installation and symlink
 RUN composer global require laravel/vapor-cli --update-with-dependencies && \
