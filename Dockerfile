@@ -1,4 +1,4 @@
-FROM composer/composer:2.3.10
+FROM composer/composer:2.6.2
 
 # Image information
 ARG VCS_REF
@@ -16,7 +16,7 @@ LABEL maintainer="Davi Marcondes Moreira <davi.marcondes.moreira@gmail.com>" \
 # Alpine requirements
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache zlib-dev libpng-dev && \
+    apk add --no-cache zlib-dev libpng-dev nodejs npm && \
     rm -rf /var/cache/apk/*
 
 RUN docker-php-ext-install gd
